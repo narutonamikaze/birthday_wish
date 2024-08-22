@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Tanya!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #00aaff, #ff9900, #33cc33);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ffffff;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px #000000;
+        }
+
+        p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px #000000;
+        }
+
+        .kdrama, .art, .studious {
+            font-size: 1.2em;
+            margin-top: 40px;
+        }
+
+        .kdrama {
+            color: #00aaff;
+        }
+
+        .art {
+            color: #ff9900;
+        }
+
+        .studious {
+            color: #33cc33;
+        }
+
+        .balloons {
+            width: 30%;
+            height: 100px;
+            margin-top: 30px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        .confetti {
+            background-image: url('https://www.giboxonline.com/cdn/shop/articles/Happy_Birthday_to_Special_One_1100x.jpg?v=1694861103');
+            background-size: cover;
+            width: 100%;
+            height: 200px;
+            animation: rain 4s linear infinite;
+        }
+
+        @keyframes rain {
+            0% { background-position: 0 0; }
+            100% { background-position: 0 100%; }
+        }
+
+        .message {
+            font-size: 1.8em;
+            color: #333;
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 40px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .message:hover {
+            transform: scale(1.1);
+        }
+
+        .cake {
+            margin-top: 40px;
+            cursor: pointer;
+        }
+
+        .cake img {
+            width: 200px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .message-click {
+            font-size: 1.5em;
+            color: #ffcc00;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Much Much Happy Birthday, Tanya!</h1>
+
+    <p>Another year older, wiser, and even more amazing!</p>
+
+    <div class="kdrama">
+        <p>May your birthday be filled with K-drama marathons and all the episodes that make you smile!</p>
+    </div>
+
+    <div class="art">
+        <p>May your day be colorful and blah blah... real note bhyi show your drawing skills sometime :))!</p>
+    </div>
+
+    <div class="studious">
+        <p>And don't forget, it's okay to take a break from studying—chill mar, bt mat le bhyii, also fk it we ball !!!
+            You are not just a friend, ab toh dementor ki tarah meri senior ban gyi hai :(
+            [hehehe, jk, enjoy today :)]
+        </p>
+    </div>
+
+    <img src="https://cdn.mos.cms.futurecdn.net/ELvgHSRpJ6htsotnRBr3uP-415-80.jpg" alt="Balloons" class="balloons">
+
+    <div class="confetti"></div>
+
+    <div class="message">
+        <p>You're not just a friend, ab toh dementor ki tarah meri senior ban gyi hai :(
+            [hehehe, jk, enjoy today :)]
+        </p>
+    </div>
+
+    <div class="cake" onclick="revealMessage()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVfLYCRX_eC5JD5B29D5MDfilVv_pu5F2-EA&s" alt="Birthday Cake">
+    </div>
+
+    <div class="message-click" id="surpriseMessage">
+        🎉 Surprise! Let's celebrate your amazingness all day long! 🎉
+    </div>
+
+    <script>
+        function revealMessage() {
+            document.getElementById("surpriseMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
